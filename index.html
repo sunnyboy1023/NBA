@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY NBA</title>
+    <link rel="Shortcut Icon" href="ico/favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery/jquery-1.11.1.min.js"></script>
+    <script src="jquery/html5shiv.min.js"></script>
+    <script src="javascript/ranking.js"></script>
+    <script src="javascript/index.js"></script>
+
+</head>
+<body>
+    <!--页面头部start-->
+    <div class="header">
+        <div class="header-wrap">
+            <div class="header-top">
+                <div class="header-top-logo">
+                    <a href="http://china.nba.com" class="link-china"><img src="images/nba-icon.png" ></a>
+                    <a href="http://www.nba.com" class="link-nba"><img src="images/nba-com-icon.png" ></a>
+                </div>
+                <div class="header-top-link">
+                    <ul>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;" class="icon-sort-down"></a>
+                            <ul class="header-top-link-store">
+                                <li>球衣</li>
+                                <li>上装</li>
+                                <li>裤装</li>
+                                <li>鞋类</li>
+                                <li>配件专区</li>
+                                <li>定制球衣</li>
+                                <li>定制T恤</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav-content">
+                    <ul>
+                        <li><a href="javascript:;" class="current">首页</a></li>
+                        <li><a href="javascript:;" >视频</a></li>
+                        <li><a href="javascript:;" >新闻</a></li>
+                        <li><a href="javascript:;" >图集</a></li>
+                        <li>
+                            <a href="javascript:;" >球队<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-team">
+                                <dl class="east-team">
+                                    <dt>东部联盟</dt>
+                                    <dd class="team-area">
+                                        <span>东南赛区</span>
+                                        <span>中部赛区</span>
+                                        <span>大西洋赛区</span>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="cha">黄蜂</a>
+                                        <a href="javascript:;" class="cle">骑士</a>
+                                        <a href="javascript:;" class="tor">猛龙</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="atl">老鹰</a>
+                                        <a href="javascript:;" class="chi">公牛</a>
+                                        <a href="javascript:;" class="nyk">尼克斯</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="was">奇才</a>
+                                        <a href="javascript:;" class="det">活塞</a>
+                                        <a href="javascript:;" class="bos">凯尔特人</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="orl">魔术</a>
+                                        <a href="javascript:;" class="ind">步行者</a>
+                                        <a href="javascript:;" class="bkn">篮网</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="mia">热火</a>
+                                        <a href="javascript:;" class="mil">雄鹿</a>
+                                        <a href="javascript:;" class="phi">76人</a>
+                                    </dd>
+                                </dl>
+                                <dl class="west-team">
+                                    <dt>西部联盟</dt>
+                                    <dd class="team-area">
+                                        <span>太平洋赛区</span>
+                                        <span>西北赛区</span>
+                                        <span>西南赛区</span>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="gsw">勇士</a>
+                                        <a href="javascript:;" class="uta">爵士</a>
+                                        <a href="javascript:;" class="sas">马刺</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="lac">快船</a>
+                                        <a href="javascript:;" class="okc">雷霆</a>
+                                        <a href="javascript:;" class="hou">火箭</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="sac">国王</a>
+                                        <a href="javascript:;" class="por">开拓者</a>
+                                        <a href="javascript:;" class="mem">灰熊</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="lal">湖人</a>
+                                        <a href="javascript:;" class="den">掘金</a>
+                                        <a href="javascript:;" class="nop">鹈鹕</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="phx">太阳</a>
+                                        <a href="javascript:;" class="min">森林狼</a>
+                                        <a href="javascript:;" class="dal">独行侠</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >球员<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-players list">
+                                <ul>
+                                    <li>现役球员</li>
+                                    <li>退役球员</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >赛程<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-schedule list">
+                                <ul>
+                                    <li>赛程</li>
+                                    <li>季后赛</li>
+                                    <li>2017-18赛季重要日期</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >排名<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-rank list">
+                                <ul>
+                                    <li>联盟排名</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >数据<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-stats list">
+                                <ul>
+                                    <li>球员数据</li>
+                                    <li>球队数据</li>
+                                    <li>高级球队数据</li>
+                                    <li>联盟数据王</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >专题<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-special list">
+                                <ul>
+                                    <li>NBA历史</li>
+                                    <li>NBA50大球星</li>
+                                    <li>NBA扣响盛夏</li>
+                                    <li>犯规手册</li>
+                                    <li>NBA知识Q&A</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >更多<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-more list">
+                                <ul>
+                                    <li>全明星赛</li>
+                                    <li>国际赛</li>
+                                    <li>选秀大会</li>
+                                    <li>NBA游戏</li>
+                                    <li>乐园</li>
+                                    <li>NBA就职</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-nav-icon">
+                    <a href="javascript:;" ><img src="images/search-icon.png" ></a>
+                    <a href="javascript:;" ><img src="images/user-icon.png" ></a>
+                    <div class="header-nav-icon-login">
+                        <ul>
+                            <li>您好~请您登录</li>
+                            <li><a href="javascript:;">登陆</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-header">
+            <div class="header-nav">
+                <div class="header-nav-content">
+                    <a href="http://china.nba.com">NBA</a>
+                    <ul>
+                        <li><a href="javascript:;" class="current">首页</a></li>
+                        <li><a href="javascript:;" >视频</a></li>
+                        <li><a href="javascript:;" >新闻</a></li>
+                        <li><a href="javascript:;" >图集</a></li>
+                        <li>
+                            <a href="javascript:;" >球队<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-team">
+                                <dl class="east-team">
+                                    <dt>东部联盟</dt>
+                                    <dd class="team-area">
+                                        <span>东南赛区</span>
+                                        <span>中部赛区</span>
+                                        <span>大西洋赛区</span>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="cha">黄蜂</a>
+                                        <a href="javascript:;" class="cle">骑士</a>
+                                        <a href="javascript:;" class="tor">猛龙</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="atl">老鹰</a>
+                                        <a href="javascript:;" class="chi">公牛</a>
+                                        <a href="javascript:;" class="nyk">尼克斯</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="was">奇才</a>
+                                        <a href="javascript:;" class="det">活塞</a>
+                                        <a href="javascript:;" class="bos">凯尔特人</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="orl">魔术</a>
+                                        <a href="javascript:;" class="ind">步行者</a>
+                                        <a href="javascript:;" class="bkn">篮网</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="mia">热火</a>
+                                        <a href="javascript:;" class="mil">雄鹿</a>
+                                        <a href="javascript:;" class="phi">76人</a>
+                                    </dd>
+                                </dl>
+                                <dl class="west-team">
+                                    <dt>西部联盟</dt>
+                                    <dd class="team-area">
+                                        <span>太平洋赛区</span>
+                                        <span>西北赛区</span>
+                                        <span>西南赛区</span>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="gsw">勇士</a>
+                                        <a href="javascript:;" class="uta">爵士</a>
+                                        <a href="javascript:;" class="sas">马刺</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="lac">快船</a>
+                                        <a href="javascript:;" class="okc">雷霆</a>
+                                        <a href="javascript:;" class="hou">火箭</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="sac">国王</a>
+                                        <a href="javascript:;" class="por">开拓者</a>
+                                        <a href="javascript:;" class="mem">灰熊</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="lal">湖人</a>
+                                        <a href="javascript:;" class="den">掘金</a>
+                                        <a href="javascript:;" class="nop">鹈鹕</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:;" class="phx">太阳</a>
+                                        <a href="javascript:;" class="min">森林狼</a>
+                                        <a href="javascript:;" class="dal">独行侠</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >球员<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-players list">
+                                <ul>
+                                    <li>现役球员</li>
+                                    <li>退役球员</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >赛程<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-schedule list">
+                                <ul>
+                                    <li>赛程</li>
+                                    <li>季后赛</li>
+                                    <li>2017-18赛季重要日期</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >排名<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-rank list">
+                                <ul>
+                                    <li>联盟排名</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >数据<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-stats list">
+                                <ul>
+                                    <li>球员数据</li>
+                                    <li>球队数据</li>
+                                    <li>高级球队数据</li>
+                                    <li>联盟数据王</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >专题<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-special list">
+                                <ul>
+                                    <li>NBA历史</li>
+                                    <li>NBA50大球星</li>
+                                    <li>NBA扣响盛夏</li>
+                                    <li>犯规手册</li>
+                                    <li>NBA知识Q&A</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:;" >更多<i class="icon-angle-down"></i></a>
+                            <div class="header-nav-more list">
+                                <ul>
+                                    <li>全明星赛</li>
+                                    <li>国际赛</li>
+                                    <li>选秀大会</li>
+                                    <li>NBA游戏</li>
+                                    <li>乐园</li>
+                                    <li>NBA就职</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-nav-icon">
+                    <a href="javascript:;" ><img src="images/user-icon.png" ></a>
+                    <div class="header-nav-icon-login">
+                        <ul>
+                            <li>您好~请您登录</li>
+                            <li><a href="javascript:;">登陆</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面头部end-->
+    <!--页面主体start-->
+    <div class="main">
+        <div class="wrap">
+            <!--赛程表start-->
+            <div class="schedule">
+                <div class="schedule-wrap">
+                    <div class="schedule-side">
+                        <div class="schedule-date">
+                            <a href="javascript:;" class=" icon-angle-left"></a>
+                            <div class="schedule-date-content">
+                                <ul>
+                                    <li><span>4月15日</span><span>星期日</span></li>
+                                    <li><span>4月16日</span><span>星期一</span></li>
+                                    <li><span>4月17日</span><span>星期二</span></li>
+                                </ul>
+                            </div>
+                            <a href="javascript:;" class=" icon-angle-right"></a>
+                        </div>
+                        <div class="schedule-matches"><span>4</span>场比赛</div>
+                        <div class="schedule-all"><a href="javascript:;">全部赛程</a></div>
+                    </div>
+                    <div class="schedule-board">
+                        <a href="javascript:;" class=" icon-angle-left"></a>
+                        <div class="schedule-board-content">
+                            <ul>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>91</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/WAS_logo.svg" >
+                                            <div class="schedule-board-content-name">奇才</div>
+                                            <div class="schedule-board-content-record">43-39</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>106</span> - <span>114</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">猛龙 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/TOR_logo.svg" >
+                                            <div class="schedule-board-content-name">猛龙</div>
+                                            <div class="schedule-board-content-record">59-23</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/MIA_logo.svg" >
+                                            <div class="schedule-board-content-name">热火</div>
+                                            <div class="schedule-board-content-record">44-38</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>103</span> - <span>130</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">76人 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/PHI_logo.svg" >
+                                            <div class="schedule-board-content-name">76人</div>
+                                            <div class="schedule-board-content-record">52-30</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/NOP_logo.svg" >
+                                            <div class="schedule-board-content-name">鹈鹕</div>
+                                            <div class="schedule-board-content-record">48-34</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>97</span> - <span>95</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">鹈鹕 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/POR_logo.svg" >
+                                            <div class="schedule-board-content-name">开拓者</div>
+                                            <div class="schedule-board-content-record">49-33</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>92</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>92</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/WAS_logo.svg" >
+                                            <div class="schedule-board-content-name">奇才</div>
+                                            <div class="schedule-board-content-record">43-39</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>106</span> - <span>114</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">猛龙 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/TOR_logo.svg" >
+                                            <div class="schedule-board-content-name">猛龙</div>
+                                            <div class="schedule-board-content-record">59-23</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/MIA_logo.svg" >
+                                            <div class="schedule-board-content-name">热火</div>
+                                            <div class="schedule-board-content-record">44-38</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>103</span> - <span>130</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">76人 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/PHI_logo.svg" >
+                                            <div class="schedule-board-content-name">76人</div>
+                                            <div class="schedule-board-content-record">52-30</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/NOP_logo.svg" >
+                                            <div class="schedule-board-content-name">鹈鹕</div>
+                                            <div class="schedule-board-content-record">48-34</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>97</span> - <span>95</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">鹈鹕 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/POR_logo.svg" >
+                                            <div class="schedule-board-content-name">开拓者</div>
+                                            <div class="schedule-board-content-record">49-33</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>92</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>92</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>93</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/WAS_logo.svg" >
+                                            <div class="schedule-board-content-name">奇才</div>
+                                            <div class="schedule-board-content-record">43-39</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>106</span> - <span>114</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">猛龙 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/TOR_logo.svg" >
+                                            <div class="schedule-board-content-name">猛龙</div>
+                                            <div class="schedule-board-content-record">59-23</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/MIA_logo.svg" >
+                                            <div class="schedule-board-content-name">热火</div>
+                                            <div class="schedule-board-content-record">44-38</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>103</span> - <span>130</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">76人 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/PHI_logo.svg" >
+                                            <div class="schedule-board-content-name">76人</div>
+                                            <div class="schedule-board-content-record">52-30</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/NOP_logo.svg" >
+                                            <div class="schedule-board-content-name">鹈鹕</div>
+                                            <div class="schedule-board-content-record">48-34</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>97</span> - <span>95</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">鹈鹕 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/POR_logo.svg" >
+                                            <div class="schedule-board-content-name">开拓者</div>
+                                            <div class="schedule-board-content-record">49-33</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>92</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/NOP_logo.svg" >
+                                            <div class="schedule-board-content-name">鹈鹕</div>
+                                            <div class="schedule-board-content-record">48-34</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>97</span> - <span>95</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">鹈鹕 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/POR_logo.svg" >
+                                            <div class="schedule-board-content-name">开拓者</div>
+                                            <div class="schedule-board-content-record">49-33</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                                <li>
+                                    <div class="schedule-board-content-top">
+                                        <div class="schedule-board-content-broadcasters">BestTV 腾讯</div>
+                                        <div class="schedule-board-content-home">
+                                            <img src="images/team-logo/SAS_logo.svg" >
+                                            <div class="schedule-board-content-name">马刺</div>
+                                            <div class="schedule-board-content-record">47-35</div>
+                                        </div>
+                                        <div class="schedule-board-content-result">
+                                            <div class="schedule-board-content-score">
+                                                <span>92</span> - <span>113</span>
+                                            </div>
+                                            <div class="schedule-board-content-state">结束</div>
+                                            <div class="schedule-board-content-total">勇士 领先 1 - 0</div>
+                                        </div>
+                                        <div class="schedule-board-content-away">
+                                            <img src="images/team-logo/GSW_logo.svg" >
+                                            <div class="schedule-board-content-name">勇士</div>
+                                            <div class="schedule-board-content-record">58-24</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-board-content-bottom"></div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <a href="javascript:;" class=" icon-angle-right"></a>
+                    </div>
+                </div>
+            </div>
+            <!--赛程表end-->
+            <!--顶部广告start-->
+            <div class="topBanner">
+                    <a href="javascript:;"><img src="images/banner.jpg"></a>
+            </div>
+            <!--顶部广告end-->
+            <!--轮播图部分start-->
+            <div class="sectionSlider">
+                <div class="sectionSlider-slider">
+                    <div class="sectionSlider-slider-view">
+                        <ul>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/slider/slider1.jpg">
+                                    <h3>明日7:30腾讯&百视通直播：slider1</h3>
+                                    <div class="mask"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/slider/slider2.jpg">
+                                    <h3>明日7:30腾讯&百视通直播：slider2</h3>
+                                    <div class="mask"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/slider/slider3.jpg">
+                                    <h3>明日7:30腾讯&百视通直播：slider3</h3>
+                                    <div class="mask"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/slider/slider4.jpg">
+                                    <h3>明日7:30腾讯&百视通直播：slider4</h3>
+                                    <div class="mask"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="images/slider/slider5.jpg">
+                                    <h3>明日7:30腾讯&百视通直播：slider5</h3>
+                                    <div class="mask"></div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ol></ol>
+                        <a href="javascript:;" class="icon-angle-left"></a>
+                        <a href="javascript:;" class="icon-angle-right"></a>
+                    </div>
+                </div>
+                <div class="sectionSlider-photoNews">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/photo-news/147790219.jpg" >
+                                <h3>雄鹿VS绿军G5前瞻：天王山之战谁能更胜一筹？</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/photo-news/147788062.jpg" >
+                                <h3>单节22分刷新纪录 哈登一波流带走比赛</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/photo-news/147787198_small2.jpg" >
+                                <h3>24日数据酷：火箭单节50分球队季后赛纪录</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/photo-news/147785143.jpg" >
+                                <h3>视频-浓眉哥2017-18赛季盖帽集锦</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sectionSlider-importantNews">
+                    <div class="sectionSlider-importantNews-title">要闻
+                        <a href="javascript:;" >换一换</a>
+                    </div>
+                    <div class="sectionSlider-importantNews-content">
+                        <ul>
+                            <li><a href="javascript:;">我是第1条新闻而且我是一条特别特别长的新闻</a></li>
+                            <li><a href="javascript:;">我是第2条新闻</a></li>
+                            <li><a href="javascript:;">我是第3条新闻</a></li>
+                            <li><a href="javascript:;">我是第4条新闻</a></li>
+                            <li><a href="javascript:;">我是第5条新闻</a></li>
+                            <li><a href="javascript:;">我是第6条新闻</a></li>
+                            <li><a href="javascript:;">我是第7条新闻</a></li>
+                            <li><a href="javascript:;">我是第8条新闻</a></li>
+                            <li><a href="javascript:;">我是第9条新闻</a></li>
+                            <li><a href="javascript:;">我是第10条新闻</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="javascript:;">我是第11条新闻而且我是一条特别特别长的新闻</a></li>
+                            <li><a href="javascript:;">我是第12条新闻</a></li>
+                            <li><a href="javascript:;">我是第13条新闻</a></li>
+                            <li><a href="javascript:;">我是第14条新闻</a></li>
+                            <li><a href="javascript:;">我是第15条新闻</a></li>
+                            <li><a href="javascript:;">我是第16条新闻</a></li>
+                            <li><a href="javascript:;">我是第17条新闻</a></li>
+                            <li><a href="javascript:;">我是第18条新闻</a></li>
+                            <li><a href="javascript:;">我是第19条新闻</a></li>
+                            <li><a href="javascript:;">我是第20条新闻</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="javascript:;">我是第21条新闻而且我是一条特别特别长的新闻</a></li>
+                            <li><a href="javascript:;">我是第22条新闻</a></li>
+                            <li><a href="javascript:;">我是第23条新闻</a></li>
+                            <li><a href="javascript:;">我是第24条新闻</a></li>
+                            <li><a href="javascript:;">我是第25条新闻</a></li>
+                            <li><a href="javascript:;">我是第26条新闻</a></li>
+                            <li><a href="javascript:;">我是第27条新闻</a></li>
+                            <li><a href="javascript:;">我是第28条新闻</a></li>
+                            <li><a href="javascript:;">我是第29条新闻</a></li>
+                            <li><a href="javascript:;">我是第30条新闻</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="javascript:;">我是第41条新闻而且我是一条特别特别长的新闻</a></li>
+                            <li><a href="javascript:;">我是第42条新闻</a></li>
+                            <li><a href="javascript:;">我是第43条新闻</a></li>
+                            <li><a href="javascript:;">我是第44条新闻</a></li>
+                            <li><a href="javascript:;">我是第45条新闻</a></li>
+                            <li><a href="javascript:;">我是第46条新闻</a></li>
+                            <li><a href="javascript:;">我是第47条新闻</a></li>
+                            <li><a href="javascript:;">我是第48条新闻</a></li>
+                            <li><a href="javascript:;">我是第49条新闻</a></li>
+                            <li><a href="javascript:;">我是第50条新闻</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--轮播图部分end-->
+            <!--最新要闻部分start-->
+            <div class="news">
+                <div class="news-news">
+                    <div class="news-news-title">
+                        <a href="javascript:;" class="title">最新资讯</a>
+                        <a href="javascript:;" class="addteam">添加主队</a>
+                    </div>
+                    <div class="news-news-switch">
+                        <a href="javascript:;">换一换</a>
+                    </div>
+                    <div class="news-news-content">
+                        <div>
+                            <a href="javascript:;" class="firstRow">
+                                <img src="images/news/147805921.jpg">
+                                <h3 class="normal">第一组爵士VS雷霆G5前瞻：三巨头赢球or回家？</h3>
+                            </a>
+                            <a href="javascript:;" class="firstRow">
+                                <span><img src="images/news/147805345.jpg"></span>
+                                <h3 class="video">帕克与大加索尔强调不会退役 仍愿留守马刺</h3>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805393.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="video">2018-04-25 16:43</i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;" class="firstRow">
+                                <img src="images/news/147805921.jpg">
+                                <h3 class="normal">第二组爵士VS雷霆G5前瞻：三巨头赢球or回家？</h3>
+                            </a>
+                            <a href="javascript:;" class="firstRow">
+                                <span><img src="images/news/147805345.jpg"></span>
+                                <h3 class="video">帕克与大加索尔强调不会退役 仍愿留守马刺</h3>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805393.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="video">2018-04-25 16:43</i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;" class="firstRow">
+                                <img src="images/news/147805921.jpg">
+                                <h3 class="normal">第三组爵士VS雷霆G5前瞻：三巨头赢球or回家？</h3>
+                            </a>
+                            <a href="javascript:;" class="firstRow">
+                                <span><img src="images/news/147805345.jpg"></span>
+                                <h3 class="video">帕克与大加索尔强调不会退役 仍愿留守马刺</h3>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805393.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="video">2018-04-25 16:43</i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;" class="firstRow">
+                                <img src="images/news/147805921.jpg">
+                                <h3 class="normal">第四组爵士VS雷霆G5前瞻：三巨头赢球or回家？</h3>
+                            </a>
+                            <a href="javascript:;" class="firstRow">
+                                <span><img src="images/news/147805345.jpg"></span>
+                                <h3 class="video">帕克与大加索尔强调不会退役 仍愿留守马刺</h3>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805393.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="normal">2018-04-25 16:43</i>
+                            </a>
+                            <a href="javascript:;" class="secondRow">
+                                <span><img src="images/news/147805408.jpg" ></span>
+                                <h3>视频-吉诺比利集锦 老马努拼到最后一刻</h3>
+                                <i class="video">2018-04-25 16:43</i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="news-moreNews">更多资讯<i class="icon-angle-right"></i></a>
+                </div>
+                <div class="news-ranking">
+                    <div class="ranking-type">
+                        <a href="javascript:;" class="active" >联盟 排名</a>
+                        <a href="javascript:;"  >分区 排名</a>
+                    </div>
+                    <div class="ranking-group">
+                        <a href="javascript:;" class="active" ><img src="images/team-logo/eastern_logo.png" >东部联盟</a>
+                        <a href="javascript:;"  ><img src="images/team-logo/western_logo.png" >西部联盟</a>
+                    </div>
+                    <div class="ranking-content">
+                        <div class="league">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>排名</th><th></th><th>队名</th><th>胜</th><th>负</th><th>胜场差</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>07</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>08</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>09</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="zone">
+                            <div class="title"></div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>排名</th><th></th><th>队名</th><th>胜</th><th>负</th><th>胜场差</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                    <td>05</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="title"></div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>排名</th><th></th><th>队名</th><th>胜</th><th>负</th><th>胜场差</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="title"></div>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>排名</th><th></th><th>队名</th><th>胜</th><th>负</th><th>胜场差</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--最新要闻部分end-->
+            <!--视频部分start-->
+            <div class="video">
+                <div class="video-title">
+                    <div class="video-name">视频</div>
+                    <div class="video-tab">
+                        <span class="active" data-show=".video-game">比赛</span>
+                        <span data-show=".video-best">最佳</span>
+                        <span data-show=".video-topic">专题</span>
+                    </div>
+                    <a href="javascript:;" class="video-more">更多></a>
+                </div>
+                <div class="video-content">
+                    <span class="icon-angle-left"></span>
+                    <span class="icon-angle-right"></span>
+                    <div class="video-game">
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>game1视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940556.jpg" ></span>
+                                <i>2018-05-09 13:56</i>
+                                <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>game2视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>game3视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                            <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>game4视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                            <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-best">
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>best1视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                            <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>best2视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                            <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>best3视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                            <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-topic">
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>topic1视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                            <span><img src="images/video/147940556.jpg" ></span>
+                            <i>2018-05-09 13:56</i>
+                            <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942731.jpg" ></span>
+                                <i>2018-05-09 16:19</i>
+                                <h4>topic2视频-保罗41+10+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942651.jpg" ></span>
+                                <i>2018-05-09 16:17</i>
+                                <h4>视频-库里28+8+7集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147942604.jpg" ></span>
+                                <i>2018-05-09 16:15</i>
+                                <h4>视频-鹈鹕104-113勇士 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940563.jpg" ></span>
+                                <i>2018-05-09 13:58</i>
+                                <h4>视频-安东尼-戴维斯34+19集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940556.jpg" ></span>
+                                <i>2018-05-09 13:56</i>
+                                <h4>视频-霍勒迪27+10+11集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940537.jpg" ></span>
+                                <i>2018-05-09 13:54</i>
+                                <h4>视频-杜兰特24+7+6集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940438.jpg" ></span>
+                                <i>2018-05-09 13:42</i>
+                                <h4>视频-爵士102-112火箭 集锦</h4>
+                            </a>
+                            <a href="javascript:;">
+                                <span><img src="images/video/147940154.jpg" ></span>
+                                <i>2018-05-09 12:39</i>
+                                <h4>视频-连续传导险失误李文压哨跳投命中</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--视频部分end-->
+            <!--数据王部分start-->
+            <div class="leader">
+                <div class="leader-title">
+                    <div class="leader-name">数据王</div>
+                    <div class="leader-tab">
+                        <span class="active" data-show=".leader-daily">每日 数据王</span>
+                        <span data-show=".leader-season">赛季 数据王</span>
+                    </div>
+                    <a href="javascript:;" class="leader-more">更多</a>
+                </div>
+                <div class="leader-content">
+                    <span class="icon-angle-left"></span>
+                    <span class="icon-angle-right"></span>
+                    <ul class="leader-daily" data-show=".leader-daily">
+                       <li>
+                           <h3>得分</h3>
+                           <a href="javascript:;" class="team" ><img src="images/team-logo/HOU_logo.svg" ></a>
+                           <div class="first">
+                               <a href="javascript:;" class="player" ><img src="images/player/201935%20(1).png" ></a>
+                               <div class="info">
+                                   <span class="number" >39</span>
+                                   <a href="javascript:;" class="name">
+                                       <span>詹姆斯</span><span>哈登</span>
+                                   </a>
+                                   <span class="position" >13 后卫 / 火箭</span>
+                               </div>
+                           </div>
+                           <div class="other">
+                               <a href="javascript:;"><img src="images/player/201142.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">凯文-杜兰特</a>
+                                   <i>35 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">35</span>
+                           </div>
+                           <div class="other last">
+                               <a href="javascript:;"><img src="images/player/202691.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">克莱-汤普森</a>
+                                   <i>11 后卫 / 勇士</i>
+                               </span>
+                               <span class="number">28</span>
+                           </div>
+                       </li>
+                       <li>
+                           <h3>篮板</h3>
+                           <a href="javascript:;" class="team" ><img src="images/team-logo/GSW_logo.svg" ></a>
+                           <div class="first">
+                               <a href="javascript:;" class="player" ><img src="images/player/203110%20(1).png" ></a>
+                               <div class="info">
+                                   <span class="number" >8</span>
+                                   <a href="javascript:;" class="name">
+                                       <span>德雷蒙德</span><span>格林</span>
+                                   </a>
+                                   <span class="position" >23 前锋 / 勇士</span>
+                               </div>
+                           </div>
+                           <div class="other">
+                               <a href="javascript:;"><img src="images/player/201142.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">凯文-杜兰特</a>
+                                   <i>35 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">35</span>
+                           </div>
+                           <div class="other last">
+                               <a href="javascript:;"><img src="images/player/101108.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">克里斯-保罗</a>
+                                   <i>3 后卫 / 火箭</i>
+                               </span>
+                               <span class="number">6</span>
+                           </div>
+                       </li>
+                       <li>
+                           <h3>助攻</h3>
+                           <a href="javascript:;" class="team" ><img src="images/team-logo/GSW_logo.svg" ></a>
+                           <div class="first">
+                               <a href="javascript:;" class="player" ><img src="images/player/201939.png" ></a>
+                               <div class="info">
+                                   <span class="number" >8</span>
+                                   <a href="javascript:;" class="name">
+                                       <span>斯蒂芬</span><span>库里</span>
+                                   </a>
+                                   <span class="position" >30 后卫 / 勇士</span>
+                               </div>
+                           </div>
+                           <div class="other">
+                               <a href="javascript:;"><img src="images/player/203110.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">德雷蒙德-格林</a>
+                                   <i>23 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">5</span>
+                           </div>
+                           <div class="other last">
+                               <a href="javascript:;"><img src="images/player/201935.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">詹姆斯-哈登</a>
+                                   <i>13 后卫 / 火箭</i>
+                               </span>
+                               <span class="number">5</span>
+                           </div>
+                       </li>
+                       <li>
+                           <h3>盖帽</h3>
+                           <a href="javascript:;" class="team" ><img src="images/team-logo/HOU_logo.svg" ></a>
+                           <div class="first">
+                               <a href="javascript:;" class="player" ><img src="images/player/203991%20(1).png" ></a>
+                               <div class="info">
+                                   <span class="number" >2</span>
+                                   <a href="javascript:;" class="name">
+                                       <span>克林特</span><span>卡佩拉</span>
+                                   </a>
+                                   <span class="position" >15 中锋 / 火箭</span>
+                               </div>
+                           </div>
+                           <div class="other">
+                               <a href="javascript:;"><img src="images/player/201142.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">凯文-杜兰特</a>
+                                   <i>35 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">1</span>
+                           </div>
+                           <div class="other last">
+                               <a href="javascript:;"><img src="images/player/2561.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">大卫-韦斯特</a>
+                                   <i>3 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">0</span>
+                           </div>
+                       </li>
+                       <li>
+                           <h3>抢断</h3>
+                           <a href="javascript:;" class="team" ><img src="images/team-logo/GSW_logo.svg" ></a>
+                           <div class="first">
+                               <a href="javascript:;" class="player" ><img src="images/player/202691%20(1).png" ></a>
+                               <div class="info">
+                                   <span class="number" >2</span>
+                                   <a href="javascript:;" class="name">
+                                       <span>克莱</span><span>汤普森</span>
+                                   </a>
+                                   <span class="position" >11 后卫 / 勇士</span>
+                               </div>
+                           </div>
+                           <div class="other">
+                               <a href="javascript:;"><img src="images/player/1626172.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">凯文-鲁尼</a>
+                                   <i>5 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">1</span>
+                           </div>
+                           <div class="other last">
+                               <a href="javascript:;"><img src="images/player/203110.png"></a>
+                               <span class="info">
+                                   <a href="javascript:;">德雷蒙德-格林</a>
+                                   <i>23 前锋 / 勇士</i>
+                               </span>
+                               <span class="number">1</span>
+                           </div>
+                       </li>
+                    </ul>
+                    <ul class="leader-season" data-show=".leader-season">
+                        <li>
+                            <h3>场均得分</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/CLE_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/2544.png" ></a>
+                                <div class="info">
+                                    <span class="number" >32.7</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>勒布朗</span><span>詹姆斯</span>
+                                    </a>
+                                    <span class="position" >23 前锋-后卫 / 骑士</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/203076.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">安东尼-戴维斯</a>
+                                   <i>23 前锋-中锋 / 鹈鹕</i>
+                               </span>
+                                <span class="number">30.1</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/201566.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">拉塞尔-威斯布鲁克</a>
+                                   <i>0 后卫 / 雷霆</i>
+                               </span>
+                                <span class="number">29.5</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>场均篮板</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/NOP_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/203076%20(1).png" ></a>
+                                <div class="info">
+                                    <span class="number" >13.4</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>安东尼</span><span>戴维斯</span>
+                                    </a>
+                                    <span class="position" >23 前锋-中锋 / 鹈鹕</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/1626157.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">卡尔-安东尼-唐斯</a>
+                                   <i>32 中锋 / 森林狼</i>
+                               </span>
+                                <span class="number">13.4</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/203954.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">乔尔-恩比德</a>
+                                   <i>21 中锋 / 76人</i>
+                               </span>
+                                <span class="number">12.6</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>场均助攻</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/NOP_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/200765.png" ></a>
+                                <div class="info">
+                                    <span class="number" >12.2</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>拉简</span><span>隆多</span>
+                                    </a>
+                                    <span class="position" >9 后卫 / 鹈鹕</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/202322.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">约翰-沃尔</a>
+                                   <i>2 后卫 / 奇才</i>
+                               </span>
+                                <span class="number">11.5</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/203110.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">德雷蒙德-格林</a>
+                                   <i>23 前锋 / 勇士</i>
+                               </span>
+                                <span class="number">9</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>场均盖帽</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/HOU_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/203991%20(1).png" ></a>
+                                <div class="info">
+                                    <span class="number" >2.8</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>克林特</span><span>卡佩拉</span>
+                                    </a>
+                                    <span class="position" >15 中锋 / 火箭</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/203076.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">安东尼-戴维斯</a>
+                                   <i>23 前锋-中锋 / 鹈鹕</i>
+                               </span>
+                                <span class="number">2.3</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/203497.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">鲁迪-戈贝尔</a>
+                                   <i>27 中锋 / 爵士</i>
+                               </span>
+                                <span class="number">2.3</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>场均抢断</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/IND_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/203506.png" ></a>
+                                <div class="info">
+                                    <span class="number" >2.4</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>维克托</span><span>奥拉迪波</span>
+                                    </a>
+                                    <span class="position" >4 后卫 / 步行者</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/202322.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">约翰-沃尔</a>
+                                   <i>2 后卫 / 奇才</i>
+                               </span>
+                                <span class="number">2.3</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/201935.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">詹姆斯-哈登</a>
+                                   <i>13 后卫 / 火箭</i>
+                               </span>
+                                <span class="number">2.3</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>%</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/UTA_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/203497%20(1).png" ></a>
+                                <div class="info">
+                                    <span class="number" >65.5%</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>鲁迪</span><span>戈贝尔</span>
+                                    </a>
+                                    <span class="position" >27 中锋 / 爵士</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/203118.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">迈克-斯科特</a>
+                                   <i>30 前锋 / 奇才</i>
+                               </span>
+                                <span class="number">63.4%</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/203991.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">克林特-卡佩拉</a>
+                                   <i>15 中锋 / 火箭</i>
+                               </span>
+                                <span class="number">63.4%</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>罚球%</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/GSW_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/201939.png" ></a>
+                                <div class="info">
+                                    <span class="number" >100%</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>斯蒂芬</span><span>库里</span>
+                                    </a>
+                                    <span class="position" >30 后卫 / 勇士</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/202691.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">克莱-汤普森</a>
+                                   <i>11 后卫 / 勇士</i>
+                               </span>
+                                <span class="number">100%</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/200746.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">拉马库斯-阿尔德里奇</a>
+                                   <i>12 前锋 / 马刺</i>
+                               </span>
+                                <span class="number">97.6%</span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>3分%</h3>
+                            <a href="javascript:;" class="team" ><img src="images/team-logo/MIN_logo.svg" ></a>
+                            <div class="first">
+                                <a href="javascript:;" class="player" ><img src="images/player/201565.png" ></a>
+                                <div class="info">
+                                    <span class="number" >70%</span>
+                                    <a href="javascript:;" class="name">
+                                        <span>德里克</span><span>罗斯</span>
+                                    </a>
+                                    <span class="position" >25 后卫 / 森林狼</span>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <a href="javascript:;"><img src="images/player/203118.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">迈克-斯科特</a>
+                                   <i>30 前锋 / 奇才</i>
+                               </span>
+                                <span class="number">63.6%</span>
+                            </div>
+                            <div class="other last">
+                                <a href="javascript:;"><img src="images/player/203114.png"></a>
+                                <span class="info">
+                                   <a href="javascript:;">克里斯-米德尔顿</a>
+                                   <i>22 前锋 / 雄鹿</i>
+                               </span>
+                                <span class="number">61%</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--数据王部分start-->
+            <!--专题部分start-->
+            <div class="special">
+                <div class="special-title">专题</div>
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/special/special-topic-nba-50.jpg" class="bg">
+                            <img src="images/special/special-topic-nba-50.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/special/special-topic-mvp.jpg" class="bg">
+                            <img src="images/special/special-topic-mvp.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/special/special-topic-champion.jpg" class="bg">
+                            <img src="images/special/special-topic-champion.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/special/special-topic-secret-agent.jpg" class="bg">
+                            <img src="images/special/special-topic-secret-agent.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/special/special-topic-kobe.jpg" class="bg">
+                            <img src="images/special/special-topic-kobe.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="images/special/special-topic-nba5V5.jpg" class="bg">
+                            <img src="images/special/special-topic-nba5V5.png">
+                        </a>
+                    </li>
+                </ul>
+                <div class="special-vote">
+                    <h3>调查</h3>
+                    <div>
+                        <form action="">
+                            <p>你觉得总决赛的对阵双方将是？</p>
+                            <label><input type="radio" name="option">  勇士-骑士</label>
+                            <label><input type="radio" name="option">  勇士-凯尔特人</label>
+                            <label><input type="radio" name="option">  火箭-骑士</label>
+                            <label><input type="radio" name="option">  火箭-凯尔特人</label>
+                            <input type="button" value="提交" class="submit">
+                            <input type="button" value="查看" class="check">
+                        </form>
+                    </div>
+                    <a href="javascript:;" class="special-rule">
+                        <img src="images/special/special-topic-rule.png">
+                    </a>
+                </div>
+
+            </div>
+            <!--专题部分end-->
+            <!--社交媒体部分start-->
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <a href="javascript:;">微博
+                            <img src="images/social-media/icon_weibo_821f76.jpg" class="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">NBA 微信
+                            <img src="images/social-media/media-wx-ico_a7a28c.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-wx-qrcode_af2888.png" class="qr">
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="playzone"><span>NBA<br>Playzone</span>
+                            <img src="images/social-media/media-pz-ico_f23438.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-pz-qrcode_9485b6.png" class="qr">
+                    </li>
+                    <li>
+                        <a href="javascript:;">NBA QQ
+                            <img src="images/social-media/media-qq-ico_1143cd.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-qq-qrcode_02f9c8.png" class="qr">
+                    </li>
+                    <li>
+                        <a href="javascript:;">NBA 兴趣
+                            <img src="images/social-media/media-xq-ico_d035d8.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-xq-qrcode_51ada2.png" class="qr">
+                    </li>
+                    <li>
+                        <a href="javascript:;">TTNBA
+                            <img src="images/social-media/media-ttnba-ico_e72401.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-ttnba-qrcode_d65aae.png" class="qr">
+                    </li>
+                    <li>
+                        <a href="javascript:;">NBA Store
+                            <img src="images/social-media/media-store-ico_81928b.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-store-qrcode_0ac518.png" class="qr">
+                    </li>
+                    <li>
+                        <a href="javascript:;">NBA 鞋会
+                            <img src="images/social-media/media-xh-ico_b8dc69.png" class="icon">
+                        </a>
+                        <img src="images/social-media/media-xh-qrcode_d544f3.png" class="qr">
+                    </li>
+                </ul>
+            </div>
+            <!--社交媒体部分end-->
+            <!--合作伙伴部分start-->
+            <div class="partner">
+                <h3>NBA官方合作伙伴</h3>
+                <ul>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_01_79da27.jpg"></a>
+                    </li>
+                    <li >
+                        <a href="javascript:;"><img src="images/partner/logo_partner_02_084a68.jpg"></a>
+                    </li>
+                    <li class="narrow">
+                        <a href="javascript:;"><img src="images/partner/Chivas.png"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_04_a3917e.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_05_17d6a3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_06_2d4d93.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_07_f90317.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_08_b60bda.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_09_4bbec0.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_10_004887.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_11_596999.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_12_3aad33.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_13_9395e6.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_14_d1f56f.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_15_901a5b.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_16_06e8ee.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_17_be3828.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_18_d5bf85.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_19_fcc4b4.jpg"></a>
+                    </li>
+                    <li class="narrow">
+                        <a href="javascript:;"><img src="images/partner/144468026.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/partner/logo_partner_21_13ced2.jpg"></a>
+                    </li>
+                </ul>
+                <p>
+                    制作人：&nbsp;&nbsp;&nbsp;&nbsp;闫旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    手机：133-8802-0863&nbsp;&nbsp;&nbsp;&nbsp;
+                    邮箱：<a href="mailto:yanxu1023@126.com">yanxu1023@126.com</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    微信：yanxu_1023;&nbsp;&nbsp;&nbsp;&nbsp;
+                    QQ：513341430
+                </p>
+            </div>
+            <!--合作伙伴部分end-->
+        </div>
+    </div>
+    <!--页面主体end-->
+    <!--页面尾部start-->
+    <div class="footer">
+        <!--更多信息start-->
+        <div class="about">
+            <div class="about-wrap">
+                <dl>
+                    <dt>关于</dt>
+                    <dd><a href="javascript:;">NBA Store</a></dd>
+                    <dd><a href="javascript:;">NBA就职机会</a></dd>
+                </dl>
+                <dl>
+                    <dt>NBA赛事</dt>
+                    <dd><a href="javascript:;">选秀大会</a></dd>
+                    <dd><a href="javascript:;">jr.NBA高中赛</a></dd>
+                </dl>
+                <dl>
+                    <dt>专题</dt>
+                    <dd><a href="javascript:;">休赛季转会</a></dd>
+                    <dd><a href="javascript:;">联盟的骄傲</a></dd>
+                    <dd><a href="javascript:;">新春贺岁</a></dd>
+                    <dd><a href="javascript:;">扣响盛夏</a></dd>
+                </dl>
+                <dl>
+                    <dt>NBA101</dt>
+                    <dd><a href="javascript:;">NBA历史</a></dd>
+                    <dd><a href="javascript:;">NBA50大球星</a></dd>
+                    <dd><a href="javascript:;">NBA知识Q&A</a></dd>
+                </dl>
+                <dl class="sport">
+                    <dt>腾讯体育</dt>
+                    <dd><img src="images/footer-sports-qrcode_c4a619.png"></dd>
+                </dl>
+                <dl class="app">
+                    <dt>NBA官方应用</dt>
+                    <dd><img src="images/footer-nba-qrcode_689c63.png"></dd>
+                </dl>
+            </div>
+        </div>
+        <!--更多信息end-->
+        <!--版权部分start-->
+        <div class="copyright">
+            <p>©2018年著作权 NBA 中国所有权。</p>
+            <p>本页面内容仅为个人学习交流制作，任何内容都不得以任何形式被复制、再传播，或篡改。</p>
+            <p>页面内容及素材来源均来自NBA.com/China，望浏览人员遵守NBA.com/China的隐私政策和使用条款。</p>
+            <p>有任何的建议和意见，都欢迎联络我：<a href="mailto:yanxu1023@126.com">yanxu1023@126.com</a></p>
+            <p>By Demon 闫旭</p>
+        </div>
+        <!--版权部分end-->
+    </div>
+    <!--页面尾部end-->
+</body>
+</html>
